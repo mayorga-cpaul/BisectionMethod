@@ -1,19 +1,27 @@
+using Microsoft.Extensions.DependencyInjection;
+using View.Extensions;
 using View.Forms;
+using View.Utils;
 
 namespace View
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            var services = new ServiceCollection();
+            services.AddServices();
+
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmMain());
+
+            using (var serivceScope = services.BuildServiceProvider())
+            {
+                ServicesReq.ServiceProvider = serivceScope;
+                var main = serivceScope.GetRequiredService<FrmMain>();
+                Application.Run(main);
+            }
+
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace View.Models;
+﻿namespace NumericMethod.Services.Models;
 
-public class Bisection
+public class BisectionAproximate
 {
     public int I { get; set; }
     public double Xa { get; set; }
