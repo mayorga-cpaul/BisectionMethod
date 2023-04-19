@@ -308,7 +308,7 @@ public class AproximateMethods : IAproximateMethods
     #endregion
 
     #region Bairstow
-    public List<List<Bairstow.IterationResult>> GetIterations(double[] polynomial, double error, 
+    public List<List<Bairstow.IterationResult>> BairstowMethod(double[] polynomial, double error, 
         int iterations, double sGuess, double rGuess)
     {
         Bairstow b = new Bairstow(polynomial, error, iterations, sGuess, rGuess);

@@ -12,7 +12,7 @@ public interface IAproximateMethods
     IList<FixedPointProperties> FixedPointMethod(string func, double x0, double error, int maxIterations);
     IList<MullerIteration> MullerMethod(string function, double x0, double x1, double x2, double tol, int maxIter);
     IList<IteracionNewtonSE> MetodoNewtonRaphsonParaSENoLineales(string primeraEc, string segundaEc, double x0, double y0, double tolerancia);
-    List<List<IterationResult>> GetIterations(double[] polynomial, double error,
+    List<List<IterationResult>> BairstowMethod(double[] polynomial, double error,
     int iterations, double sGuess, double rGuess);
 
 }

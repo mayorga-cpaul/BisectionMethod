@@ -49,6 +49,8 @@ public partial class FrmMain : Form
                 new FrmMullerMethod(aproximateMethods).Show();
                 break;
             case Methods.Bairstow_Method:
+                this.Hide();
+                new FrmBairstow(aproximateMethods).Show();
                 break;
             case Methods.Nonlinear_System_Equations_Raphson:
                 this.Hide();
