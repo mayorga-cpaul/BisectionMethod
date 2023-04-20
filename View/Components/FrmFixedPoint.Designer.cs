@@ -286,6 +286,7 @@
             this.ClientSize = new System.Drawing.Size(1063, 700);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.Name = "FrmFixedPoint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFixedPoint";

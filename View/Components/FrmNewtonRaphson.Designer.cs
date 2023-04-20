@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNewtonRaphson));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNewtonRaphson));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.btnExit = new System.Windows.Forms.PictureBox();
             this.lblIt = new ReaLTaiizor.Controls.BigLabel();
             this.txtError = new ReaLTaiizor.Controls.BigTextBox();
             this.bigLabel4 = new ReaLTaiizor.Controls.BigLabel();
@@ -43,10 +44,9 @@
             this.btnTest = new ReaLTaiizor.Controls.AloneButton();
             this.txtFunction = new ReaLTaiizor.Controls.BigTextBox();
             this.dtgData = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.btnExit = new System.Windows.Forms.PictureBox();
             this.airForm1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).BeginInit();
             this.SuspendLayout();
             // 
             // airForm1
@@ -81,6 +81,17 @@
             this.airForm1.Text = "Newton Raphson Method";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(996, 606);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(39, 46);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 62;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblIt
             // 
@@ -268,17 +279,6 @@
             this.dtgData.Size = new System.Drawing.Size(984, 362);
             this.dtgData.TabIndex = 52;
             // 
-            // btnExit
-            // 
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(996, 606);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(39, 46);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 62;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // FrmNewtonRaphson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -286,14 +286,15 @@
             this.ClientSize = new System.Drawing.Size(1063, 700);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.Name = "FrmNewtonRaphson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNewtonRaphson";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.ResumeLayout(false);
             this.airForm1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).EndInit();
             this.ResumeLayout(false);
 
         }

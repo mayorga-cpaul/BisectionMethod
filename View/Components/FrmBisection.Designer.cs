@@ -93,7 +93,7 @@
             // 
             // bigLabel6
             // 
-            this.bigLabel6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bigLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bigLabel6.AutoSize = true;
             this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -106,6 +106,7 @@
             // 
             // btnView
             // 
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
             this.btnView.Location = new System.Drawing.Point(984, 441);
             this.btnView.Name = "btnView";
@@ -116,6 +117,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(984, 618);
             this.btnExit.Name = "btnExit";
@@ -348,7 +350,7 @@
             this.ClientSize = new System.Drawing.Size(1063, 700);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1063, 700);
+            this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.MinimumSize = new System.Drawing.Size(1063, 700);
             this.Name = "FrmBisection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

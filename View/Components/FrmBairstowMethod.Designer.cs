@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBairstowMethod));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.txtFunction = new ReaLTaiizor.Controls.FoxBigLabel();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.txtIteration = new ReaLTaiizor.Controls.BigTextBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.bigLabel5 = new ReaLTaiizor.Controls.BigLabel();
             this.txtError = new ReaLTaiizor.Controls.BigTextBox();
@@ -42,18 +45,20 @@
             this.txtSa = new ReaLTaiizor.Controls.BigTextBox();
             this.btnTest = new ReaLTaiizor.Controls.AloneButton();
             this.dtgData = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.txtIteration = new ReaLTaiizor.Controls.BigTextBox();
-            this.txtFunction = new ReaLTaiizor.Controls.FoxBigLabel();
+            this.bigLabel6 = new ReaLTaiizor.Controls.BigLabel();
+            this.btnView = new System.Windows.Forms.PictureBox();
             this.airForm1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnView)).BeginInit();
             this.SuspendLayout();
             // 
             // airForm1
             // 
             this.airForm1.BackColor = System.Drawing.Color.White;
             this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.airForm1.Controls.Add(this.bigLabel6);
+            this.airForm1.Controls.Add(this.btnView);
             this.airForm1.Controls.Add(this.txtFunction);
             this.airForm1.Controls.Add(this.bigLabel1);
             this.airForm1.Controls.Add(this.txtIteration);
@@ -84,8 +89,53 @@
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
             // 
+            // txtFunction
+            // 
+            this.txtFunction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtFunction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.txtFunction.Line = ReaLTaiizor.Controls.FoxBigLabel.Direction.Bottom;
+            this.txtFunction.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.txtFunction.Location = new System.Drawing.Point(155, 396);
+            this.txtFunction.Name = "txtFunction";
+            this.txtFunction.Size = new System.Drawing.Size(851, 64);
+            this.txtFunction.TabIndex = 51;
+            this.txtFunction.Text = "x^(5) - 3.5x^(4)+2.75x^(3) + 2.125x^(2) - 3.875x + 1.25";
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Location = new System.Drawing.Point(497, 518);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(124, 35);
+            this.bigLabel1.TabIndex = 50;
+            this.bigLabel1.Text = "Iterations:";
+            // 
+            // txtIteration
+            // 
+            this.txtIteration.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtIteration.BackColor = System.Drawing.Color.Transparent;
+            this.txtIteration.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIteration.ForeColor = System.Drawing.Color.DimGray;
+            this.txtIteration.Image = null;
+            this.txtIteration.Location = new System.Drawing.Point(627, 518);
+            this.txtIteration.MaxLength = 32767;
+            this.txtIteration.Multiline = false;
+            this.txtIteration.Name = "txtIteration";
+            this.txtIteration.ReadOnly = false;
+            this.txtIteration.Size = new System.Drawing.Size(100, 46);
+            this.txtIteration.TabIndex = 49;
+            this.txtIteration.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtIteration.UseSystemPasswordChar = false;
+            // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(984, 569);
             this.btnExit.Name = "btnExit";
@@ -210,39 +260,39 @@
             this.dtgData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtgData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgData.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgData.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgData.EnableHeadersVisualStyles = false;
             this.dtgData.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtgData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtgData.Location = new System.Drawing.Point(39, 49);
+            this.dtgData.Location = new System.Drawing.Point(52, 50);
             this.dtgData.MultiSelect = false;
             this.dtgData.Name = "dtgData";
             this.dtgData.ReadOnly = true;
             this.dtgData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgData.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgData.RowHeadersWidth = 51;
             this.dtgData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgData.RowTemplate.Height = 29;
@@ -250,47 +300,29 @@
             this.dtgData.Size = new System.Drawing.Size(984, 323);
             this.dtgData.TabIndex = 40;
             // 
-            // bigLabel1
+            // bigLabel6
             // 
-            this.bigLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.bigLabel1.AutoSize = true;
-            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel1.Location = new System.Drawing.Point(497, 518);
-            this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(124, 35);
-            this.bigLabel1.TabIndex = 50;
-            this.bigLabel1.Text = "Iterations:";
+            this.bigLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bigLabel6.AutoSize = true;
+            this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bigLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel6.Location = new System.Drawing.Point(773, 470);
+            this.bigLabel6.Name = "bigLabel6";
+            this.bigLabel6.Size = new System.Drawing.Size(56, 35);
+            this.bigLabel6.TabIndex = 53;
+            this.bigLabel6.Text = "Ver:";
             // 
-            // txtIteration
+            // btnView
             // 
-            this.txtIteration.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtIteration.BackColor = System.Drawing.Color.Transparent;
-            this.txtIteration.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtIteration.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIteration.Image = null;
-            this.txtIteration.Location = new System.Drawing.Point(627, 518);
-            this.txtIteration.MaxLength = 32767;
-            this.txtIteration.Multiline = false;
-            this.txtIteration.Name = "txtIteration";
-            this.txtIteration.ReadOnly = false;
-            this.txtIteration.Size = new System.Drawing.Size(100, 46);
-            this.txtIteration.TabIndex = 49;
-            this.txtIteration.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtIteration.UseSystemPasswordChar = false;
-            // 
-            // txtFunction
-            // 
-            this.txtFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtFunction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.txtFunction.Line = ReaLTaiizor.Controls.FoxBigLabel.Direction.Bottom;
-            this.txtFunction.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtFunction.Location = new System.Drawing.Point(458, 396);
-            this.txtFunction.Name = "txtFunction";
-            this.txtFunction.Size = new System.Drawing.Size(206, 64);
-            this.txtFunction.TabIndex = 51;
-            this.txtFunction.Text = "8x^2 + 2x - 2";
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
+            this.btnView.Location = new System.Drawing.Point(835, 470);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(39, 46);
+            this.btnView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnView.TabIndex = 52;
+            this.btnView.TabStop = false;
             // 
             // FrmBairstowMethod
             // 
@@ -299,6 +331,7 @@
             this.ClientSize = new System.Drawing.Size(1063, 700);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.Name = "FrmBairstowMethod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBairstowMethod";
@@ -307,6 +340,7 @@
             this.airForm1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,5 +360,7 @@
         private ReaLTaiizor.Controls.AloneButton btnTest;
         private ReaLTaiizor.Controls.PoisonDataGridView dtgData;
         private ReaLTaiizor.Controls.FoxBigLabel txtFunction;
+        private ReaLTaiizor.Controls.BigLabel bigLabel6;
+        private PictureBox btnView;
     }
 }

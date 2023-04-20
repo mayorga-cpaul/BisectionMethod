@@ -11,6 +11,7 @@ public class AproximateMethods : IAproximateMethods
     {
         List<BisectionAproximate> result = new List<BisectionAproximate>();
 
+        // Se crea el objeto BisectionAproximate de la primera iteración
         BisectionAproximate currentResult = new BisectionAproximate();
         currentResult.I = 0;
         currentResult.Xa = xa;
@@ -19,10 +20,13 @@ public class AproximateMethods : IAproximateMethods
         currentResult.Fxr = ValidateFunctions.GetFunction(function, currentResult.Xr);
         currentResult.Ea = 100.0;
 
+        // Se agrega el objeto BisectionAproximate a la lista de resultados
         result.Add(currentResult);
 
+        // Se entra en el bucle de iteraciones
         while (currentResult.Ea > tolerance && currentResult.I < maxIterations)
         {
+            // Se crea un nuevo objeto BisectionAproximate con los valores de la iteración anterior
             currentResult = new BisectionAproximate();
             currentResult.I = result.Count;
             currentResult.Xa = result[result.Count - 1].Xa;
@@ -30,6 +34,7 @@ public class AproximateMethods : IAproximateMethods
             currentResult.Fxa = result[result.Count - 1].Fxa;
             currentResult.Fxr = ValidateFunctions.GetFunction(function, currentResult.Xr);
 
+            // Se verifica el signo de la función en xa y xr
             if (currentResult.FxaFr < 0)
             {
                 currentResult.Xb = result[result.Count - 1].Xr;
@@ -46,13 +51,14 @@ public class AproximateMethods : IAproximateMethods
                 break;
             }
 
+            // Se calcula el error relativo y se agrega el objeto BisectionAproximate a la lista de resultados
             currentResult.Ea = Math.Abs((currentResult.Xr - result[result.Count - 1].Xr) / currentResult.Xr) * 100.0;
-
             result.Add(currentResult);
         }
 
         return result;
     }
+
     #endregion
 
     #region FalseRule

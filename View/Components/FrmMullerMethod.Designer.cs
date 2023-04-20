@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMullerMethod));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMullerMethod));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.btnExit = new System.Windows.Forms.PictureBox();
+            this.bigLabel6 = new ReaLTaiizor.Controls.BigLabel();
+            this.txtX2 = new ReaLTaiizor.Controls.BigTextBox();
+            this.dtgData = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.bigLabel5 = new ReaLTaiizor.Controls.BigLabel();
             this.txtError = new ReaLTaiizor.Controls.BigTextBox();
             this.bigLabel4 = new ReaLTaiizor.Controls.BigLabel();
@@ -44,13 +48,9 @@
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.btnTest = new ReaLTaiizor.Controls.AloneButton();
             this.txtFunction = new ReaLTaiizor.Controls.BigTextBox();
-            this.dtgData = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.bigLabel6 = new ReaLTaiizor.Controls.BigLabel();
-            this.txtX2 = new ReaLTaiizor.Controls.BigTextBox();
-            this.btnExit = new System.Windows.Forms.PictureBox();
             this.airForm1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).BeginInit();
             this.SuspendLayout();
             // 
             // airForm1
@@ -89,6 +89,97 @@
             this.airForm1.Text = "airForm1";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1012, 630);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(39, 46);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 63;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // bigLabel6
+            // 
+            this.bigLabel6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bigLabel6.AutoSize = true;
+            this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bigLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel6.Location = new System.Drawing.Point(778, 523);
+            this.bigLabel6.Name = "bigLabel6";
+            this.bigLabel6.Size = new System.Drawing.Size(74, 35);
+            this.bigLabel6.TabIndex = 52;
+            this.bigLabel6.Text = "X2 = ";
+            // 
+            // txtX2
+            // 
+            this.txtX2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtX2.BackColor = System.Drawing.Color.Transparent;
+            this.txtX2.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtX2.ForeColor = System.Drawing.Color.DimGray;
+            this.txtX2.Image = null;
+            this.txtX2.Location = new System.Drawing.Point(858, 516);
+            this.txtX2.MaxLength = 32767;
+            this.txtX2.Multiline = false;
+            this.txtX2.Name = "txtX2";
+            this.txtX2.ReadOnly = false;
+            this.txtX2.Size = new System.Drawing.Size(100, 46);
+            this.txtX2.TabIndex = 51;
+            this.txtX2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtX2.UseSystemPasswordChar = false;
+            // 
+            // dtgData
+            // 
+            this.dtgData.AllowUserToResizeRows = false;
+            this.dtgData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgData.BackgroundColor = System.Drawing.Color.White;
+            this.dtgData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtgData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgData.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgData.EnableHeadersVisualStyles = false;
+            this.dtgData.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dtgData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtgData.Location = new System.Drawing.Point(38, 62);
+            this.dtgData.MultiSelect = false;
+            this.dtgData.Name = "dtgData";
+            this.dtgData.ReadOnly = true;
+            this.dtgData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgData.RowHeadersWidth = 51;
+            this.dtgData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dtgData.RowTemplate.Height = 29;
+            this.dtgData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgData.Size = new System.Drawing.Size(984, 362);
+            this.dtgData.TabIndex = 50;
             // 
             // bigLabel5
             // 
@@ -256,97 +347,6 @@
             this.txtFunction.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtFunction.UseSystemPasswordChar = false;
             // 
-            // dtgData
-            // 
-            this.dtgData.AllowUserToResizeRows = false;
-            this.dtgData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgData.BackgroundColor = System.Drawing.Color.White;
-            this.dtgData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dtgData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgData.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgData.EnableHeadersVisualStyles = false;
-            this.dtgData.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dtgData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtgData.Location = new System.Drawing.Point(38, 62);
-            this.dtgData.MultiSelect = false;
-            this.dtgData.Name = "dtgData";
-            this.dtgData.ReadOnly = true;
-            this.dtgData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgData.RowHeadersWidth = 51;
-            this.dtgData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dtgData.RowTemplate.Height = 29;
-            this.dtgData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgData.Size = new System.Drawing.Size(984, 362);
-            this.dtgData.TabIndex = 50;
-            // 
-            // bigLabel6
-            // 
-            this.bigLabel6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.bigLabel6.AutoSize = true;
-            this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bigLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel6.Location = new System.Drawing.Point(778, 523);
-            this.bigLabel6.Name = "bigLabel6";
-            this.bigLabel6.Size = new System.Drawing.Size(74, 35);
-            this.bigLabel6.TabIndex = 52;
-            this.bigLabel6.Text = "X2 = ";
-            // 
-            // txtX2
-            // 
-            this.txtX2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtX2.BackColor = System.Drawing.Color.Transparent;
-            this.txtX2.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtX2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtX2.Image = null;
-            this.txtX2.Location = new System.Drawing.Point(858, 516);
-            this.txtX2.MaxLength = 32767;
-            this.txtX2.Multiline = false;
-            this.txtX2.Name = "txtX2";
-            this.txtX2.ReadOnly = false;
-            this.txtX2.Size = new System.Drawing.Size(100, 46);
-            this.txtX2.TabIndex = 51;
-            this.txtX2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtX2.UseSystemPasswordChar = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1012, 630);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(39, 46);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 63;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // FrmMullerMethod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -354,14 +354,15 @@
             this.ClientSize = new System.Drawing.Size(1063, 700);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.Name = "FrmMullerMethod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMullerMethod";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.ResumeLayout(false);
             this.airForm1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgData)).EndInit();
             this.ResumeLayout(false);
 
         }
