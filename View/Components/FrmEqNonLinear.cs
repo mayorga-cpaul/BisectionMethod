@@ -39,5 +39,10 @@ namespace View.Components
             this.Close();
             InitForm.GetView().Show();
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

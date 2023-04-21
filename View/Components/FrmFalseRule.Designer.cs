@@ -93,19 +93,20 @@
             // 
             // bigLabel6
             // 
-            this.bigLabel6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bigLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bigLabel6.AutoSize = true;
             this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bigLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel6.Location = new System.Drawing.Point(922, 441);
+            this.bigLabel6.Location = new System.Drawing.Point(905, 441);
             this.bigLabel6.Name = "bigLabel6";
-            this.bigLabel6.Size = new System.Drawing.Size(56, 35);
+            this.bigLabel6.Size = new System.Drawing.Size(73, 35);
             this.bigLabel6.TabIndex = 56;
-            this.bigLabel6.Text = "Ver:";
+            this.bigLabel6.Text = "View:";
             // 
             // btnView
             // 
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
             this.btnView.Location = new System.Drawing.Point(984, 441);
             this.btnView.Name = "btnView";
@@ -113,6 +114,7 @@
             this.btnView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnView.TabIndex = 55;
             this.btnView.TabStop = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnExit
             // 
@@ -164,9 +166,9 @@
             this.bigLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.bigLabel4.Location = new System.Drawing.Point(479, 571);
             this.bigLabel4.Name = "bigLabel4";
-            this.bigLabel4.Size = new System.Drawing.Size(141, 35);
+            this.bigLabel4.Size = new System.Drawing.Size(124, 35);
             this.bigLabel4.TabIndex = 51;
-            this.bigLabel4.Text = "Iteraciones:";
+            this.bigLabel4.Text = "Iterations:";
             // 
             // txtIterations
             // 

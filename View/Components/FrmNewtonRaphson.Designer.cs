@@ -33,6 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.bigLabel6 = new ReaLTaiizor.Controls.BigLabel();
+            this.btnView = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.lblIt = new ReaLTaiizor.Controls.BigLabel();
             this.txtError = new ReaLTaiizor.Controls.BigTextBox();
@@ -45,6 +47,7 @@
             this.txtFunction = new ReaLTaiizor.Controls.BigTextBox();
             this.dtgData = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.airForm1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgData)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +56,8 @@
             // 
             this.airForm1.BackColor = System.Drawing.Color.White;
             this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.airForm1.Controls.Add(this.bigLabel6);
+            this.airForm1.Controls.Add(this.btnView);
             this.airForm1.Controls.Add(this.btnExit);
             this.airForm1.Controls.Add(this.lblIt);
             this.airForm1.Controls.Add(this.txtError);
@@ -81,6 +86,31 @@
             this.airForm1.Text = "Newton Raphson Method";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
+            // 
+            // bigLabel6
+            // 
+            this.bigLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bigLabel6.AutoSize = true;
+            this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bigLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel6.Location = new System.Drawing.Point(917, 429);
+            this.bigLabel6.Name = "bigLabel6";
+            this.bigLabel6.Size = new System.Drawing.Size(73, 35);
+            this.bigLabel6.TabIndex = 64;
+            this.bigLabel6.Text = "View:";
+            // 
+            // btnView
+            // 
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
+            this.btnView.Location = new System.Drawing.Point(996, 429);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(39, 46);
+            this.btnView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnView.TabIndex = 63;
+            this.btnView.TabStop = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnExit
             // 
@@ -132,9 +162,9 @@
             this.bigLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.bigLabel4.Location = new System.Drawing.Point(479, 507);
             this.bigLabel4.Name = "bigLabel4";
-            this.bigLabel4.Size = new System.Drawing.Size(141, 35);
+            this.bigLabel4.Size = new System.Drawing.Size(124, 35);
             this.bigLabel4.TabIndex = 59;
-            this.bigLabel4.Text = "Iteraciones:";
+            this.bigLabel4.Text = "Iterations:";
             // 
             // txtIterations
             // 
@@ -293,6 +323,7 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.ResumeLayout(false);
             this.airForm1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgData)).EndInit();
             this.ResumeLayout(false);
@@ -313,5 +344,7 @@
         private ReaLTaiizor.Controls.BigTextBox txtFunction;
         private ReaLTaiizor.Controls.PoisonDataGridView dtgData;
         private PictureBox btnExit;
+        private ReaLTaiizor.Controls.BigLabel bigLabel6;
+        private PictureBox btnView;
     }
 }

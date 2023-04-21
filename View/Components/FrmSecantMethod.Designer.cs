@@ -87,7 +87,7 @@
             this.airForm1.SmartBounds = true;
             this.airForm1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.airForm1.TabIndex = 0;
-            this.airForm1.Text = "airForm1";
+            this.airForm1.Text = "Secante Method";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
             // 
@@ -98,11 +98,11 @@
             this.bigLabel6.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bigLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel6.Location = new System.Drawing.Point(922, 429);
+            this.bigLabel6.Location = new System.Drawing.Point(905, 429);
             this.bigLabel6.Name = "bigLabel6";
-            this.bigLabel6.Size = new System.Drawing.Size(56, 35);
+            this.bigLabel6.Size = new System.Drawing.Size(73, 35);
             this.bigLabel6.TabIndex = 56;
-            this.bigLabel6.Text = "Ver:";
+            this.bigLabel6.Text = "View:";
             // 
             // btnView
             // 
@@ -114,6 +114,7 @@
             this.btnView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnView.TabIndex = 55;
             this.btnView.TabStop = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnExit
             // 
@@ -166,9 +167,9 @@
             this.bigLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.bigLabel4.Location = new System.Drawing.Point(479, 559);
             this.bigLabel4.Name = "bigLabel4";
-            this.bigLabel4.Size = new System.Drawing.Size(141, 35);
+            this.bigLabel4.Size = new System.Drawing.Size(124, 35);
             this.bigLabel4.TabIndex = 51;
-            this.bigLabel4.Text = "Iteraciones:";
+            this.bigLabel4.Text = "Iterations:";
             // 
             // txtIterations
             // 

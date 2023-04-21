@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using View.Components;
 using View.Extensions;
 using View.Forms;
 using View.Utils;

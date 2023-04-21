@@ -58,5 +58,10 @@ namespace View.Components
                 );
             }
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            new FrmFunc("Math.Pow(x,5) - 3.5 * Math.Pow(x,4) + 2.75 * Math.Pow(x,3) + 2.125 * Math.Pow(x,2) - 3.875*x + 1.25").Show();
+        }
     }
 }

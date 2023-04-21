@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace NumericMethod.Services.Util;
 
-internal class ValidateFunctions
+public class ValidateFunctions
 {
     public static double GetFunction(string function, double value)
     {

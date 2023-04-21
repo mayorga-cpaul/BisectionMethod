@@ -38,4 +38,10 @@ public partial class FrmBisection : Form
 
         dtgData.DataSource = data;
     }
+
+    private void btnView_Click(object sender, EventArgs e)
+    {
+        new FrmFunc(txtFunction.Text).Show();
+
+    }
 }
