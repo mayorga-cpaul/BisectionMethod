@@ -1,0 +1,15 @@
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\bin\Debug\net6.0\SimpsonMethod.exe
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\bin\Debug\net6.0\SimpsonMethod.deps.json
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\bin\Debug\net6.0\SimpsonMethod.runtimeconfig.json
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\bin\Debug\net6.0\SimpsonMethod.dll
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\bin\Debug\net6.0\SimpsonMethod.pdb
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.csproj.AssemblyReference.cache
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.AssemblyInfoInputs.cache
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.AssemblyInfo.cs
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.csproj.CoreCompileInputs.cache
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.dll
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\refint\SimpsonMethod.dll
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.pdb
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\SimpsonMethod.genruntimeconfig.cache
+C:\Users\CCBB-02\source\repos\SimpsonMethod\SimpsonMethod\obj\Debug\net6.0\ref\SimpsonMethod.dll
